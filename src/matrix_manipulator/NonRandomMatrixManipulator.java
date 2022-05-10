@@ -1,22 +1,26 @@
+/**
+ * This class exists for testing purposes only
+ */
+
 package matrix_manipulator;
 
 import java.util.Scanner;
 
-public class MatrixManipulator {
+public class NonRandomMatrixManipulator {
     int[][] matrix;
     int[][] exchangeMatrix;
     int size;
 
-    public MatrixManipulator(int n) {
+    public NonRandomMatrixManipulator(int n) {
 	matrix = new int[n][n];
 	exchangeMatrix = new int[n][n];
 	size = n;
 
+	int k = 1;
 	for (int i = 0; i < n; i++) {
 	    for (int j = 0; j < n; j++) {
-		double randomDouble = 9 * Math.random() + 1;
-		int randomInt = (int) randomDouble;
-		matrix[i][j] = randomInt;
+		matrix[i][j] = k;
+		k++;
 	    }
 	}
 
@@ -103,7 +107,7 @@ public class MatrixManipulator {
 	String sizeString = sizeScanner.next();
 	int matrixSize = Integer.valueOf(sizeString);
 
-	MatrixManipulator randomMatrix = new MatrixManipulator(matrixSize);
+	NonRandomMatrixManipulator randomMatrix = new NonRandomMatrixManipulator(matrixSize);
 	randomMatrix.matrixPrinter();
 
 	while (true) {
@@ -134,3 +138,4 @@ public class MatrixManipulator {
 	}
     } 
 }
+
