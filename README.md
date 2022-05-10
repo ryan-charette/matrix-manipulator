@@ -175,6 +175,6 @@ __ __ __ __ __
 
 > The argument numberOfTurns indicates the number of times the entire squarelotron should be rotated 90° clockwise. Any integer, including zero and negative integers, is allowable as the argument. A value of -1 indicates a 90° counterclockwise rotation. This method modifies the internal representation of the squarelotron; it does not create a new squarelotron.
 
-The program runs in the console, so if you'd like to test out the code, simply open the file in an IDE and run it. Enter an integer to define the dimensions of the matrix. The matrix will always be square. Next, select a transformation by inputting the integer corresponding to the transformation. The transformation will be applied to the originally generated matrix. There is currently no way to apply multiple transformations to the matrix, though I would like to implement that feature when I have time. 
+The program runs in the console, so if you'd like to test out the code, simply open the file in an IDE and run it. Enter an integer to define the dimensions of the matrix. The matrix will always be square. Next, select a transformation by inputting the integer corresponding to the transformation. 
 
-Also, note that there is currently no error-catching on the inputs. Please only enter integers greater than 2 for the dimensions and integers 1-4 for the transformations. Again, this is something that I intend to fix in a future version.
+Also, note that there is currently no error-catching on the inputs. Please only enter integers greater than 2 for the dimensions and integers 1-4 for the transformations. This is something that I intend to fix in a future version.
